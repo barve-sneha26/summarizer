@@ -11,3 +11,133 @@
 [2024-11-17 18:48:28,473: INFO: common: created directory at: artifacts/data_ingestion]
 [2024-11-17 18:48:32,272: INFO: data_ingestion: File is downloaded]
 [2024-11-17 18:48:32,368: INFO: main: Stage Data Ingestion Stage completed]
+[2024-11-17 19:01:12,869: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-17 19:09:08,609: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-17 19:09:08,613: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-17 19:09:08,615: INFO: common: created directory at: artifacts]
+[2024-11-17 19:10:13,835: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-17 19:10:13,838: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-17 19:10:13,839: INFO: common: created directory at: artifacts]
+[2024-11-17 19:16:33,608: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-17 19:16:33,790: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-17 19:16:33,791: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-17 19:16:33,792: INFO: common: created directory at: artifacts]
+[2024-11-17 19:17:48,070: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-17 19:17:48,072: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-17 19:17:48,073: INFO: common: created directory at: artifacts]
+[2024-11-17 19:20:55,310: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-17 19:20:55,492: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-17 19:20:55,493: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-17 19:20:55,493: INFO: common: created directory at: artifacts]
+[2024-11-17 19:21:49,723: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-17 19:21:49,725: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-17 19:21:49,726: INFO: common: created directory at: artifacts]
+[2024-11-17 19:35:43,784: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-17 19:35:43,958: INFO: main: Stage Data Ingestion Stage initiated]
+[2024-11-17 19:35:43,959: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-17 19:35:43,960: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-17 19:35:43,960: INFO: common: created directory at: artifacts]
+[2024-11-17 19:35:43,960: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-17 19:35:43,960: INFO: data_ingestion: File already exists]
+[2024-11-17 19:35:44,045: INFO: main: Stage Data Ingestion Stage completed]
+[2024-11-17 19:35:44,045: INFO: main: Stage Data Transformation Stage initiated]
+[2024-11-17 19:35:44,046: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-17 19:35:44,046: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-17 19:35:44,046: INFO: common: created directory at: artifacts]
+[2024-11-17 19:35:44,046: ERROR: main: "'ConfigBox' object has no attribute 'data_transformation'"]
+Traceback (most recent call last):
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/venv-ts/lib/python3.10/site-packages/box/box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+KeyError: 'data_transformation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/venv-ts/lib/python3.10/site-packages/box/box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/venv-ts/lib/python3.10/site-packages/box/box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'data_transformation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/venv-ts/lib/python3.10/site-packages/box/box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+AttributeError: 'ConfigBox' object has no attribute 'data_transformation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/venv-ts/lib/python3.10/site-packages/box/config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/venv-ts/lib/python3.10/site-packages/box/box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_transformation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/venv-ts/lib/python3.10/site-packages/box/box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+KeyError: 'data_transformation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/venv-ts/lib/python3.10/site-packages/box/box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/venv-ts/lib/python3.10/site-packages/box/box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'data_transformation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/venv-ts/lib/python3.10/site-packages/box/box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+AttributeError: 'ConfigBox' object has no attribute 'data_transformation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/main.py", line 23, in <module>
+    data_ingestion_pipeline.initiate_data_transformation()
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/src/textSummarizer/pipeline/st2_data_transformation_pipeline.py", line 12, in initiate_data_transformation
+    data_transformation_config = config.get_data_transformation_config()
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/src/textSummarizer/config/configuration.py", line 27, in get_data_transformation_config
+    config=self.config.data_transformation
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/venv-ts/lib/python3.10/site-packages/box/config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+  File "/Users/snehabarve/MY_PROJECTS/Summarizer/summarizer/venv-ts/lib/python3.10/site-packages/box/box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_transformation'"
+[2024-11-17 19:40:38,099: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-17 19:40:38,100: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-17 19:40:38,100: INFO: common: created directory at: artifacts]
+[2024-11-17 19:40:38,100: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-17 19:40:38,101: INFO: 2837126434: File already exists]
+[2024-11-17 19:46:19,459: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-17 19:46:19,460: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-17 19:46:19,461: INFO: common: created directory at: artifacts]
+[2024-11-17 19:46:19,462: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-17 19:46:22,601: INFO: 2837126434: File is downloaded]
+[2024-11-17 19:46:48,446: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-17 19:46:48,633: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-17 19:46:48,634: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-17 19:46:48,635: INFO: common: created directory at: artifacts]
+[2024-11-17 19:46:48,635: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-17 19:47:37,910: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-17 19:47:38,109: INFO: main: Stage Data Ingestion Stage initiated]
+[2024-11-17 19:47:38,110: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-17 19:47:38,110: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-17 19:47:38,111: INFO: common: created directory at: artifacts]
+[2024-11-17 19:47:38,111: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-17 19:47:38,111: INFO: data_ingestion: File already exists]
+[2024-11-17 19:47:38,232: INFO: main: Stage Data Ingestion Stage completed]
+[2024-11-17 19:47:38,232: INFO: main: Stage Data Transformation Stage initiated]
+[2024-11-17 19:47:38,233: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-11-17 19:47:38,233: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-17 19:47:38,233: INFO: common: created directory at: artifacts]
+[2024-11-17 19:47:38,233: INFO: common: created directory at: artifacts/data_transformation]
+[2024-11-17 19:47:41,513: INFO: main: Stage Data Transformation Stage completed]
