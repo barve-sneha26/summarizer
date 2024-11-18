@@ -1,5 +1,5 @@
 # Text Summarization NLP Using HuggingFace
-### summarizer
+### (summarizer)
 ## Project Overview
 
 This project focuses on building an end-to-end text summarization pipeline using HuggingFace Transformers. The primary objective is to process and summarize large-scale textual data efficiently, providing concise and meaningful summaries for downstream applications. The solution integrates FastAPI to deploy the summarization model as a user-friendly API, enabling seamless interaction and real-time summarization capabilities.
