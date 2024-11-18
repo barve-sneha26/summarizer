@@ -1,6 +1,7 @@
 from src.textSummarizer.logging import logger
-from src.textSummarizer.pipeline.st_1_data_ingestion_pipeline import DataIngestionPipeline
+from src.textSummarizer.pipeline.st1_data_ingestion_pipeline import DataIngestionPipeline
 from src.textSummarizer.pipeline.st2_data_transformation_pipeline import DataTransformationPipeline 
+from src.textSummarizer.pipeline.st3_model_trainer_pipeline import ModelTrainerPipeline
 
 # logger.info("Logging is implemented")
 
@@ -25,3 +26,15 @@ try:
 except Exception as e:
     logger.exception(e)
     raise e 
+
+
+STAGE_NAME="Model Trainer stage"
+
+try:
+    logger.info(f"stage {STAGE_NAME} initiated")
+    model_trainer_pipeline=ModelTrainerPipeline()
+    model_trainer_pipeline.initiate_model_trainer()
+    logger.info(f"Stage {STAGE_NAME} Completed")
+except Exception as e:
+    logger.exception(e)
+    raise e
